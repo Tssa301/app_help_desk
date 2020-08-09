@@ -1,0 +1,2 @@
+# app_help_desk
+App Help Desk (Módulo PHP 7).Neste app será criado um sistema de autenticação por sessão. O usuário terá que fazer seu login para se autenticar e ter acesso a páginas restritas da aplicação. Uma vez autenticado poderá realizar chamados diversos e ao abrir chamados poderá consultar os chamados abertos. Para finalizar, será criado um controle de perfil de acesso onde cada usuário poderá ter acesso apenas aos chamados que ele abriu.
