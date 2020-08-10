@@ -1,11 +1,4 @@
-<?php
-session_start();
-
-if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
-  header('Location: index.php?login=erro2');
-}
-
-?>
+<? require_once "validador_acesso.php" ?>;
 
 <html>
   <head>
@@ -28,7 +21,7 @@ if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        App Help Desk - Home
       </a>
     </nav>
 
@@ -43,10 +36,15 @@ if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
             <div class="card-body">
               <div class="row">
                 <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_abrir_chamado.png" width="70" height="70">
+                  <a href="abrir_chamado.php">
+                    <img src="formulario_abrir_chamado.png" width="70" height="70">
+                  </a>
                 </div>
+
                 <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_consultar_chamado.png" width="70" height="70">
+                  <a href="consultar_chamado.php">
+                    <img src="formulario_consultar_chamado.png" width="70" height="70">
+                  </a>
                 </div>
               </div>
             </div>
